@@ -1,0 +1,41 @@
+.header {
+  height: auto;
+}
+
+header {
+  position: relative;
+  width: 100vw;
+}
+
+.nav {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 10px;
+  padding: 0 20px;
+}
+
+.logo {
+  width: 300px;
+  height: auto;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  color: #004785;
+  border: none;
+  background: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.divider {
+  border-top: 1px solid #004785;
+  z-index: 0;
+}

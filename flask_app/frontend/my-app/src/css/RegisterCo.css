@@ -1,0 +1,65 @@
+bodyRegisterCo {
+  height: 100vh;
+  z-index: 3;
+  overflow-x: hidden;
+}
+
+.contentRegisterCo {
+  flex: 1;
+  text-align: left;
+  width: 60%;
+  padding-left: 15vw;
+  padding-right: 0px;
+  padding-top: 5vw;
+}
+
+.titleRegisterCo {
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+.subtitleRegisterCo {
+  font-size: 2vw;
+}
+
+.reg-buttonRegisterCo {
+  background-color: #1F3A74;
+  color: white;
+  font-size: 1.5vw;
+  border-radius: 1vw;
+  margin-top: 4vh;
+  width: 50%;
+  height: 4vw;
+}
+
+.human-imageRegisterCo {
+  position: absolute;
+  width: auto;
+  height: 40vw;
+  z-index: 2;
+  transform: translate(-20%, 0%);
+}
+
+.parentRegisterCo{
+  display: flex;
+}
+
+.photoRegisterCo{
+  width: 40%;
+  position: relative;
+
+}
+
+.inputRegisterCo{
+    font-size: 1.2vw;
+    width: 50%;
+    height: 3vw;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.formaRegisterCo{
+    display: flex;
+    flex-direction: column
+}
+

@@ -1,0 +1,114 @@
+bodyResume {
+  height: 100vw;
+  z-index: 3;
+  overflow-x: hidden;
+}
+
+.contentResume {
+  flex: 1;
+  text-align: left;
+  width: 50%;
+  padding-left: 5vw;
+  padding-right: 0px;
+}
+
+.titleResume {
+    font-size: 3.1vw;
+    font-weight: bold;
+    color: #2E363E;
+}
+
+.subtitleResume {
+  font-size: 2vw;
+    color: #9A9191;
+}
+
+.reg-buttonResume {
+    background-color: #1F3A74;
+    color: white;
+    font-size: 1.5vw;
+    border-radius: 1vw;
+    width: 20vw;
+    height: 4vw;
+    border: none;
+    margin-left: 0.5vw;
+}
+
+.parentResume{
+  display: flex;
+  height: 40vw;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.red-circleResume {
+  position: absolute;
+  width: 60vw;
+  height: 60vw;
+  z-index: 1;
+  background-color: #D21F3C;
+  border-radius: 50%;
+  transform: translate(-45%, 90%);
+}
+
+.leftResume {
+  position: relative;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex: 1;
+    overflow: hidden;
+}
+.centerResume {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+.rightResume {
+  position: relative;
+  width: 30%;
+  height: 50%;
+  display: flex;
+  flex: 1;
+}
+
+.resume-co-container {
+  display: flex;
+  height: 75vw;
+}
+
+.progress-bar-containerResume {
+    position: absolute;
+    width: 75%;
+    height: 2.2vw;
+    transform: translate(25%, 500%);
+}
+
+.progress-barResume {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #D21F3C;
+    z-index: 5;
+}
+
+.inputdivResume{
+    display: flex;
+}
+.inputResume{
+    width: 27vw;
+    margin-bottom: 1.5vw;
+    background-color: #D9D9D9;
+    padding: 1.5vw;
+    border-radius: 10px;
+}
+.input-iconResume{
+    width: 1vw;
+    height: 1vw;
+    margin-left: 1vw;
+    margin-top: 1.5vw;
+}

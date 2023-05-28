@@ -1,0 +1,65 @@
+bodyRegister {
+  height: 100vh;
+  z-index: 3;
+  overflow-x: hidden;
+}
+
+.contentRegister {
+  flex: 1;
+  text-align: left;
+  width: 60%;
+  padding-left: 15vw;
+  padding-right: 0px;
+  padding-top: 5vw;
+}
+
+.titleRegister {
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+.subtitleRegister {
+  font-size: 2vw;
+}
+
+.reg-buttonRegister {
+  background-color: #1F3A74;
+  color: white;
+  font-size: 1.5vw;
+  border-radius: 1vw;
+  margin-top: 4vh;
+  width: 50%;
+  height: 4vw;
+}
+
+.human-imageRegister {
+  position: absolute;
+  width: auto;
+  height: 40vw;
+  z-index: 2;
+  transform: translate(-25%, 0%);
+}
+
+.parentRegister{
+  display: flex;
+}
+
+.photoRegister{
+  width: 40%;
+  position: relative;
+
+}
+
+.inputRegister{
+    font-size: 1.2vw;
+    width: 50%;
+    height: 3vw;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.formaRegister{
+    display: flex;
+    flex-direction: column
+}
+
