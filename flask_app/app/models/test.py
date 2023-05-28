@@ -1,5 +1,5 @@
 from app import db
-from flask_login import UserMixin
+from sqlalchemy_serializer import SerializerMixin
 from werkzeug.security import generate_password_hash, check_password_hash
 
 class Test(db.Model):
@@ -9,7 +9,7 @@ class Test(db.Model):
     title = db.Column(db.String(64), index=True)
 
 
-class Scale(db.Model):
+class Scale(db.Model, SerializerMixin):
     id = db.Column(db.Integer, primary_key=True)
     test_id = db.Column(db.Integer, index=True)
     user_id = db.Column(db.Integer, index=True)

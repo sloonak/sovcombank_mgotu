@@ -9,7 +9,7 @@ test_creator = Blueprint('test_creator', __name__, url_prefix='/api/test')
 
 @test_creator.route('/create_test', methods=['POST'])
 def create_test():
-    req_data = request.form
+    req_data = request.get_json()
 
     _title = req_data.get("title")
     _user_id = req_data.get("user_id")
@@ -204,4 +204,20 @@ def create_scale():
         "success": True,
         "msg": "Шкала создана",
         "id": new_scale.id,
+    }, 200
+
+
+
+@test_creator.route('/get_scales/<test_id>', methods=['GET'])
+def get_scales(test_id):
+
+    scales = Scale.query.filter_by(id=test_id).all()
+
+    scales_json = []
+    for scale in scales:
+        scales_json.append(scale.to_dict())
+
+    return {
+        "success": True,
+        "scales": scales_json
     }, 200

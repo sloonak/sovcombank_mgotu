@@ -55,7 +55,7 @@ function TestScale() {
 
   const handleFinishTest = () => {
     // Переход на следующую страницу "testcreate"
-    navigate('/testCreate/${id}');
+    navigate(`/testCreate/${id}`);
   };
 
   return (

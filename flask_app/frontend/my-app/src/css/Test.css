@@ -6,7 +6,7 @@
     height: 80vh;
 }
 
-.contentResume {
+.contentTestCreate {
   flex: 1;
   text-align: left;
   width: 50%;
@@ -20,9 +20,9 @@
     color: #2E363E;
 }
 
-.subtitleResume {
+.subtitleTestCreate {
   font-size: 2vw;
-    color: #9A9191;
+    color: Black;
 }
 
 .buttonTestTitle {
@@ -60,7 +60,5 @@ button:disabled {
     margin-left: 0.5vw;
     cursor: pointer;
     margin-bottom: 1.5vw;
-}
-.buttonsTestScale{
-    
+    margin-top: 1.5vw;
 }

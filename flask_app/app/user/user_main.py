@@ -21,10 +21,9 @@ def user_create():
     }, 200
 
 
-@user_main.route('/user_update/<user_id>', methods=['POST'])
+@user_main.route('/user_update/<user_id>', methods=['PUT'])
 def user_update(user_id):
-    req_data = request.get_json()
-
+    req_data = request.get_json().get("user")
     _name = req_data.get("name")
     _birthday = req_data.get("birthday")
     _city = req_data.get("city")
@@ -32,7 +31,7 @@ def user_update(user_id):
     _job_title = req_data.get("job_title")
     _education = req_data.get("education")
     _exp = req_data.get("exp")
-    _curses = req_data.get("curses")
+    _courses = req_data.get("courses")
     _about = req_data.get("about")
     _salary = req_data.get("salary")
     _exp = req_data.get("exp")
@@ -46,7 +45,7 @@ def user_update(user_id):
     user.job_title = _job_title
     user.education = _education
     user.exp = _exp
-    user.curses = _curses
+    user.courses = _courses
     user.about = _about
     user.salary = _salary
 
@@ -56,7 +55,8 @@ def user_update(user_id):
     return {
         "success": True,
         "msg": "Пользователь обновлен",
-        "id": user.id
+        "id": user.id,
+        "req_data": req_data
     }, 200
 
 
